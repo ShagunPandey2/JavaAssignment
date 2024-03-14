@@ -21,6 +21,6 @@ public class sortedlist{
         Collections.sort(arr);
         System.out.println("After Sorting");
         System.out.println(arr);
-
+sc.close();
     }
 }
