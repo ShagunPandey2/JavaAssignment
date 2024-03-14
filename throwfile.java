@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class throwfile {
     int div(int a,int b)
     {
@@ -11,9 +13,15 @@ public class throwfile {
         
         
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ArithmeticException {
         throwfile obj=new throwfile();
-        System.out.println( obj.div(10,0));
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two numbers");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println(obj.div(a,b));
+        sc.close();
+        
     }
     
 }
